@@ -27,7 +27,7 @@ body {
   height: 260px;
   width: 300px;
   background-color: rgba(255, 255, 255, .05);
-  border: 1px solid rgba(255, 255, 255, .1);
+  /* border: 1px solid rgba(255, 255, 255, .1); */
   border-radius: 10%;
   cursor: pointer;
   position: relative;
@@ -52,6 +52,10 @@ body {
 }
 
 .card > .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
   background-color: var(--card-color);
   height: calc(100% - 2px);
@@ -62,10 +66,121 @@ body {
 }
 
 .card > .card-border {
-  background: radial-gradient(410px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, .3), transparent 40%);
+  background: radial-gradient(410px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, .3), transparent 80%);
   z-index: 1;
 }
 
 #cards:hover > .card > .card-border {
   opacity: .5;
+}
+
+.card-text, .card-header {
+  color: white;
+  opacity: .2;
+}
+
+.card-image {
+  opacity: .2;
+}
+
+
+.card:hover:nth-child(1) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(1) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(1) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+
+.card:hover:nth-child(2) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(2) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(2) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+
+.card:hover:nth-child(3) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(3) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(3) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+
+.card:hover:nth-child(5) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(5) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(5) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+
+.card:hover:nth-child(6) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(6) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.card:hover:nth-child(6) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+#cards > div > div.card-content > img {
+  height: calc(60% - 20px);
+  width: 97.5%;
+  object-fit:cover;
+  border-radius: inherit;
 }
