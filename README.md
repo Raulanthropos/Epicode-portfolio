@@ -1,2 +1,2 @@
 # Epicode-portfolio
-Portfolio website - HTML &amp; CSS (Simple)
+Portfolio website - HTML, CSS &amp; vanilla JavaScript
