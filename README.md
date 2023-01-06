@@ -4,14 +4,16 @@
 ## Screenshots
 
 ## Technologies Used
-### HTML
-### CSS
-### JavaScript (vanilla)
+* HTML
+* CSS
+* JavaScript (vanilla)
 
 ## Features
 
-Responsive design
-Animations
+Responsive design  
+
+Animations  
+
 Form
 
 ## Website
