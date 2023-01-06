@@ -12,7 +12,7 @@
 
 Responsive design
 Animations
-Modals
+Form
 
 ## Website
 
