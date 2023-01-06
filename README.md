@@ -2,7 +2,6 @@
 ### A portfolio website built with HTML, CSS, and vanilla JavaScript.
 
 ## Screenshots
-### Insert screenshots of your portfolio here.
 
 ## Technologies Used
 ### HTML
