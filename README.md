@@ -10,11 +10,9 @@
 
 ## Features
 
-Responsive design  
-
-Animations  
-
-Form
+* Responsive design  
+* Animations  
+* Form
 
 ## Website
 
