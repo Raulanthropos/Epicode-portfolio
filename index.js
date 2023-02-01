@@ -32,16 +32,4 @@ myForm.addEventListener("submit", function(event) {
     });
 });
 
-function solution(A) {
-  let moments = 0
-  let turnedOnBulds = 0;
-  for (let i = 0; i < A.length; i++) {
-      if (A[i] === turnedOnBulds + 1) {
-          turnedOnBulds = A[i];
-          moments++;
-      }
-  }
-  return moments;
-}
-
 
