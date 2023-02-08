@@ -54,6 +54,8 @@ body {
 #cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 956px;
   width: calc(100% - 20px);
   gap: 8px;
@@ -120,96 +122,7 @@ body {
 }
 
 
-.card:hover:nth-child(1) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(1) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(1) > div.card-content > .card-image{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-
-.card:hover:nth-child(2) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(2) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(2) > div.card-content > .card-image{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-
-.card:hover:nth-child(3) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(3) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(3) > div.card-content > .card-image{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(4) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(4) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(4) > div.card-content > .card-image{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-
-.card:hover:nth-child(5) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(5) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(5) > div.card-content > .card-image{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-
-.card:hover:nth-child(6) > div.card-content > .card-text{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(6) > div.card-content > .card-header{
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.card:hover:nth-child(6) > div.card-content > .card-image{
+.card:hover > div.card-content > .card-text, .card-header, .card-image {
   opacity: 1;
   transition: opacity 1s;
 }
