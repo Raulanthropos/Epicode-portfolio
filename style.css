@@ -122,7 +122,96 @@ body {
 }
 
 
-.card:hover > div.card-content > .card-text, .card-header, .card-image {
+.card:hover:nth-child(1) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(1) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(1) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.card:hover:nth-child(2) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(2) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(2) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.card:hover:nth-child(3) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(3) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(3) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(4) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.card:hover:nth-child(5) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(5) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(5) > div.card-content > .card-image{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+
+.card:hover:nth-child(6) > div.card-content > .card-text{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(6) > div.card-content > .card-header{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card:hover:nth-child(6) > div.card-content > .card-image{
   opacity: 1;
   transition: opacity 1s;
 }
