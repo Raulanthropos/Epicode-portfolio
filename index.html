@@ -9,6 +9,7 @@
     <title>Portfolio website</title>
 </head>
 <body>
+  <main id="main">
   <div class="hero-section">
     <div class="intro">
       <h2>Hi! My name is Ioannis!</h2>
@@ -18,7 +19,7 @@
       <img src="./photo1.jpg" alt="John Doe">
     </div>
   </div>
-    <main id="main">
+
 <div id="cards">
     <div class="card">
         <div class="card-border"></div>
@@ -33,7 +34,7 @@
         <div class="card-content">
             <img src="https://user-images.githubusercontent.com/77921037/211094022-f9466bec-0dd3-47cc-aaeb-0e1e620c0549.png" alt="covid-19-tracker-app" class="card-image">
             <h4 class="card-header">Covid-19 Tracker App</h4>
-            <p class="card-text card-tech"><span class="card-span">Technologies used: </span>HTML CSS Bootstrap JavaScript React JS</p>
+            <p class="card-text card-tech"><span class="card-span">Technologies used: </span>💻 React JS 🔥💻</p>
         </div>
     </div>
     <div class="card">
@@ -41,15 +42,7 @@
         <div class="card-content">
             <img src="https://user-images.githubusercontent.com/77921037/211097118-1e13f766-9aee-4a3d-8ba3-1f840af2350c.png" alt="job-search-app" class="card-image">
             <h4 class="card-header">Job Search Engine</h4>
-            <p class="card-text card-tech"><span class="card-span">Technologies used: </span>HTML CSS JavaScript React Redux</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-border"></div>
-        <div class="card-content">
-            <img src="https://user-images.githubusercontent.com/77921037/215348303-0261f4dc-4951-40ed-b4be-86b6742ad562.png" alt="Spotify-app" class="card-image">
-            <h4 class="card-header">Spotify App</h4>
-            <p class="card-text card-tech"><span class="card-span">Technologies used: </span>HTML CSS JavaScript</p>
+            <p class="card-text card-tech"><span class="card-span">Technologies used: </span>💻 React JS 🔥💻 🔥 Redux 🔥 2137</p>
         </div>
     </div>
 </div>
@@ -60,20 +53,20 @@
 		</header>
 	</div>
 	
-	<div class="row">
-		<article class="col-md-12">
+	<div class="row" id="form">
+		<article>
 			<form action="/send-email" method="post" enctype="text/plain" id="my-form">
 				<div class="form-group">
 					<label>From</label>
-					<input class="form-control" type="text" name="from"  placeholder="Enter email">
+					<input class="form-control" type="text" name="from"  placeholder="Enter email" required>
 				</div>
 				<div class="form-group">
 					<label>Subject</label>
-					<input class="form-control" type="text" name="subject"  placeholder="Enter Subject">
+					<input class="form-control" type="text" name="subject"  placeholder="Enter Subject" required>
 				</div>
 				<div class="form-group">
 					<label>Message</label>
-					<textarea class="form-control" name="message"></textarea>
+					<textarea class="form-control" name="message" required></textarea>
 				</div>
 				<input type="submit" class="btn btn-primary" name="submit" value="Submit Feedback">
 			</form>

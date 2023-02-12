@@ -1,10 +1,16 @@
 const cardContainer = document.getElementById("cards");
 const myForm = document.getElementById("my-form");
-const cardContents = document.querySelector('.card');
+const cardContents = document.querySelectorAll('.card');
 console.log(cardContents);
 
-cardContents.addEventListener("click", function() {
+cardContents[0].addEventListener("click", function() {
   window.open("https://linked-in-clone-proj.vercel.app/", "_blank");
+});
+cardContents[1].addEventListener("click", function() {
+  window.open("https://linked-in-clone-proj.vercel.app/", "_blank");
+});
+cardContents[2].addEventListener("click", function() {
+  window.open("https://d12-hw-3-raulanthropos.vercel.app/", "_blank");
 });
 
 emailjs.init(environment.MY_SERVICE_ID);

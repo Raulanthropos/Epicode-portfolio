@@ -12,7 +12,7 @@
   --third-color: #35605A;
   --last-color: #31E981;
   --card-color: #D8E4FF;
-  overflow: scroll;
+  --form-width: 956px;
 }
 
 *,
@@ -29,6 +29,14 @@
 body {
   font-size: var(--normal-font-size);
   color: var(--text-color);
+  font-family: 'League Spartan', sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+main {
   background: linear-gradient(
     225deg,
     var(--bg-color) 0%,
@@ -36,19 +44,6 @@ body {
     var(--third-color) 70%,
     var(--last-color) 100%
   );
-  background-color: var(--bg-color);
-  font-family: 'League Spartan', sans-serif;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-
-body {
-  overflow: scroll;
 }
 
 #cards {
@@ -61,12 +56,26 @@ body {
   gap: 8px;
 }
 
+#form, .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--form-width);
+  gap: 8px;
+  margin-inline: auto;
+}
+
+.form-control {
+  width: var(--form-width);
+}
+
 .card {
   height: 260px;
   width: 300px;
   background-color: rgba(255, 255, 255, .05);
   /* border: 1px solid rgba(255, 255, 255, .1); */
-  border-radius: 10%;
+  border-radius: 15px;
   cursor:crosshair;
   position: relative;
 }
@@ -132,7 +141,8 @@ body {
   width: 100%;
   overflow: hidden;
   object-fit:cover;
-  border-radius: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 
 .card-tech {
@@ -167,10 +177,10 @@ button {
   max-height: 60vh;
   margin-inline: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .intro {
@@ -179,7 +189,7 @@ button {
 }
 
 .hero-img-container {
-  width: 40%;
+  /* width: 40%; */
   text-align: center;
 }
 
@@ -187,6 +197,12 @@ button {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+@media (max-width: 1280px) {
+  .form-control {
+    width: calc(var(--form-width) - 10%);
+  }
 }
 
 @media (max-width: 768px) {
@@ -232,25 +248,6 @@ button {
   transition: 0.5s;
 }
 
-.btn:nth-of-type(1) {
-  color: var(--text-color);
-}
-
-.btn:nth-of-type(2) {
-  color: var(--text-color-dark);
-  background: var(--text-color);
-}
-
-.btn:nth-of-type(1):hover {
-  color: var(--text-color-dark);
-  background: var(--text-color);
-}
-
-.btn:nth-of-type(2):hover {
-  color: var(--text-color);
-  background: transparent;
-}
-
 .home__copy {
   align-self: flex-end;
   margin-bottom: 0.5rem;
@@ -269,39 +266,29 @@ button {
   :root {
     --normal-font-size: 0.9rem;
   }
+  .form-control {
+    width: calc(var(--form-width) - 40%);
+  }
+  article {
+    max-width: calc(var(--form-width) - 40%);
+    margin-inline: auto;
+    padding-inline: auto;
+  }
 }
 
 @media (max-width: 767px) {
-  .nav__toggle {
-    display: flex;
-    background: transparent;
-    font-size: 1.5rem;
-    color: var(--text-color);
-  }
-
-  .nav__list {
-    background: hsla(215, 31%, 12%, 0.9);
-    border: 1px solid var(--text-color);
-    position: fixed;
-    top: -100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 80%;
-    height: 80%;
-    flex-direction: column;
-    padding: 2rem 1rem;
-    transition: 0.3s;
-  }
-
-  .nav__link {
-    font-size: 1.1rem;
-  }
-
   .show-menu {
     top: 4.5rem;
   }
 
+  .form-control {
+    width: calc(var(--form-width) - 80%);
+  }
+  article {
+    max-width: calc(var(--form-width) - 80%);
+    margin-inline: auto;
+    padding-inline: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -311,8 +298,27 @@ button {
   .card > div.card-content > .card-text, .card-header, .card-image {
     opacity: 1;
   }
+  .form-control {
+    width: calc(var(--form-width) - 95%);
+  }
+  article {
+    max-width: calc(var(--form-width) - 95%);
+    margin-inline: auto;
+    padding-inline: auto;
+  }
 }
 
+@media (max-width: 522px) {
+  .form-control {
+    width: 300px;
+  }
+  article {
+    max-width: 300px;
+    margin-inline: auto;
+    padding-inline: auto;
+  }
+  
+}
 .row {
   text-align: center;
 }
